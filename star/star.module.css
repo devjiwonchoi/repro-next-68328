@@ -1,0 +1,7 @@
+.star {
+  color: red;
+  &:before,
+  &:after {
+    content: "⭐️";
+  }
+}

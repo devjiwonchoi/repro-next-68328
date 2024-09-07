@@ -1,0 +1,18 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "pnpm update next@canary && pnpm run build && pnpm run start",
+      "runAtStart": true,
+      "restartOn": {
+        "clone": true
+      }
+    }
+  }
+}
